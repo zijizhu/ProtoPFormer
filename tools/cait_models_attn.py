@@ -5,8 +5,8 @@ from functools import partial
 from timm.data import IMAGENET_DEFAULT_MEAN, IMAGENET_DEFAULT_STD
 from timm.models.cait import Cait
 from timm.models.registry import register_model
-from timm.models.layers import PatchEmbed, Mlp, DropPath, trunc_normal_
-from timm.models.helpers import build_model_with_cfg, overlay_external_default_cfg
+from timm.models.layers import Mlp, DropPath
+from timm.models.helpers import build_model_with_cfg
 
 def _cfg(url='', **kwargs):
     return {

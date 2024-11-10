@@ -1,4 +1,3 @@
-import tools.cait_models_attn as cait_models_attn
 from timm.models import create_model
 
 def cait_xxs24_224_features(pretrained=False, nb_classes=1000, drop=0.0, drop_path=0.1, **kwargs):
