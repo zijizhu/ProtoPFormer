@@ -2,7 +2,7 @@
 
 export PYTHONPATH=./:$PYTHONPATH
 # export CUDA_VISIBLE_DEVICES=0,1,2,3
-export CUDA_VISIBLE_DEVICES=4,5,6,7
+export CUDA_VISIBLE_DEVICES=0
 
 # model=deit_tiny_patch16_224
 # model=deit_small_patch16_224
