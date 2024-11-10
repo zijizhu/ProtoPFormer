@@ -83,6 +83,8 @@ class Block(nn.Module):
 
 class MyVisionTransformer(VisionTransformer):
     def __init__(self, *args, **kwargs):
+        if "pretrained_cfg" in kwargs:
+            del kwargs["pretrained_cfg"]
         super().__init__(*args, **kwargs)
         norm_layer = kwargs['norm_layer'] or partial(nn.LayerNorm, eps=1e-6)
         act_layer = None or nn.GELU
